@@ -1,49 +1,328 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniela Lepe | Portafolio Profesional</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daniela Lepe | Portafolio Profesional</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #253044;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #16345f, #285c91);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 55px 25px;
+}
+
+section {
+    margin-bottom: 55px;
+}
+
+h3 {
+    color: #16345f;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.about {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #e8f0f8;
+    color: #16345f;
+    padding: 9px 17px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.project {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.project h4 {
+    color: #16345f;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.tags {
+    margin: 20px 0;
+}
+
+.tag {
+    display: inline-block;
+    background: #edf2f7;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin: 3px;
+    font-size: 14px;
+}
+
+.metrics {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.metric {
+    background: #f1f6fb;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 130px;
+}
+
+.metric strong {
+    display: block;
+    color: #16345f;
+    font-size: 20px;
+}
+
+.button {
+    display: inline-block;
+    background: #16345f;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #285c91;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #16345f;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+</style>
 </head>
 
 <body>
+
+<header>
 
     <h1>Daniela Lepe Araya</h1>
 
     <h2>Ingeniera en Control de Gestión</h2>
 
     <p>
-        Control de Gestión | Análisis Financiero | Data Analytics
+        Control de Gestión · Análisis Financiero · Data Analytics
     </p>
+
+</header>
+
+
+<div class="container">
+
+<section>
 
     <h3>Sobre mí</h3>
 
-    <p>
+    <div class="about">
+
+        <p>
         Ingeniera en Control de Gestión con experiencia en gestión administrativa,
         control y análisis de ingresos, cobranzas, ventas, compras, remuneraciones
         y seguimiento de resultados.
-    </p>
+        </p>
 
-    <p>
+        <br>
+
+        <p>
         Actualmente complemento mi formación con un Diplomado en Ciencia de Datos
-        para las Finanzas en la Universidad de Chile, fortaleciendo mis conocimientos
-        en análisis de datos y finanzas.
-    </p>
+        para las Finanzas en la Universidad de Chile, fortaleciendo mi perfil en
+        análisis de datos aplicado a la gestión y las finanzas.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
 
     <h3>Herramientas</h3>
 
+    <div class="skills">
+
+        <span class="skill">Excel</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">SQL</span>
+        <span class="skill">R</span>
+        <span class="skill">Python</span>
+        <span class="skill">SAP</span>
+
+    </div>
+
+</section>
+
+
+<section>
+
+<h3>Proyectos</h3>
+
+<div class="project">
+
+    <h4>
+    Sistema de Evaluación y Clasificación de Riesgo Crediticio
+    </h4>
+
     <p>
-        Excel | Power BI | SQL | R | Python | SAP
+    Desarrollo de un modelo analítico en R orientado a estimar la probabilidad
+    de que un cliente presente dificultades financieras y generar información
+    de apoyo para la toma de decisiones crediticias.
     </p>
 
-    <h3>Proyectos</h3>
+    <div class="tags">
 
-    <h4>Sistema de Evaluación y Clasificación de Riesgo Crediticio</h4>
+        <span class="tag">R</span>
+        <span class="tag">Finanzas</span>
+        <span class="tag">Regresión Logística</span>
+        <span class="tag">Data Analytics</span>
+        <span class="tag">Riesgo Crediticio</span>
 
-    <p>
-        Desarrollo de un modelo en R para estimar la probabilidad de que un cliente
-        presente dificultades financieras y apoyar la toma de decisiones crediticias.
-    </p>
+    </div>
+
+    <div class="metrics">
+
+        <div class="metric">
+            <strong>0,8185</strong>
+            AUC
+        </div>
+
+        <div class="metric">
+            <strong>79,47%</strong>
+            Accuracy
+        </div>
+
+        <div class="metric">
+            <strong>69,07%</strong>
+            Sensibilidad
+        </div>
+
+        <div class="metric">
+            <strong>80,20%</strong>
+            Especificidad
+        </div>
+
+    </div>
+
+    <a class="button"
+       href="https://github.com/danielalepearaya-design/Proyecto_Riesgo_Crediticio"
+       target="_blank">
+       Ver proyecto en GitHub
+    </a>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h3>Formación</h3>
+
+<div class="about">
+
+<p>
+<strong>Diplomado en Ciencia de Datos para las Finanzas</strong><br>
+Universidad de Chile — FEN | 2026 · En curso
+</p>
+
+<br>
+
+<p>
+<strong>Ingeniería en Control de Gestión</strong><br>
+Universidad Santo Tomás | 2021 – 2024
+</p>
+
+<br>
+
+<p>
+<strong>Técnico en Gestión de Recursos Humanos</strong><br>
+CFT ProAndes | 2016 – 2018
+</p>
+
+</div>
+
+</section>
+
+
+</div>
+
+
+<footer>
+
+<p>
+Daniela Lepe Araya · Santiago, Chile
+</p>
+
+<p>
+<a href="https://www.linkedin.com/in/daniela-karen-lepe-araya-601b3a276/"
+target="_blank">
+LinkedIn
+</a>
+</p>
+
+</footer>
 
 </body>
 </html>
