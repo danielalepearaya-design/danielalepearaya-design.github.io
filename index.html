@@ -175,6 +175,38 @@ footer a {
 }
     
 </style>
+  .header-buttons {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.header-button {
+    display: inline-block;
+    background: white;
+    color: #16345f;
+    padding: 11px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header-button:hover {
+    transform: translateY(-2px);
+}
+
+.header-button.secondary {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.header-button.secondary:hover {
+    background: rgba(255,255,255,0.12);
+}  
 </head>
 
 <body>
@@ -196,7 +228,21 @@ footer a {
     <p>
         Control de Gestión · Análisis Financiero · Data Analytics
     </p>
+    
+<div class="header-buttons">
 
+    <a class="header-button" href="CV_Daniela_Lepe.pdf" target="_blank">
+        Ver mi CV
+    </a>
+
+    <a class="header-button secondary"
+       href="https://www.linkedin.com/in/daniela-karen-lepe-araya-601b3a276/"
+       target="_blank">
+        LinkedIn
+    </a>
+
+</div>
+    
 </header>
 
 
