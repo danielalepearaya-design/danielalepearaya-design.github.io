@@ -152,11 +152,41 @@ footer a {
     color: white;
 }
 
+    .navbar {
+    background: #ffffff;
+    padding: 16px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar a {
+    color: #16345f;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: #285c91;
+}
+    
 </style>
 </head>
 
 <body>
-
+<nav class="navbar">
+    <a href="#">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#herramientas">Herramientas</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#formacion">Formación</a>
+    <a href="https://www.linkedin.com/in/daniela-karen-lepe-araya-601b3a276/" target="_blank">LinkedIn</a>
+</nav>
+    
 <header>
 
     <h1>Daniela Lepe Araya</h1>
@@ -172,7 +202,7 @@ footer a {
 
 <div class="container">
 
-<section>
+<section id="sobre-mi">
 
     <h3>Sobre mí</h3>
 
@@ -197,7 +227,7 @@ footer a {
 </section>
 
 
-<section>
+<section id="herramientas">
 
     <h3>Herramientas</h3>
 
@@ -217,7 +247,7 @@ footer a {
 
 <section>
 
-<h3>Proyectos</h3>
+<section id="proyectos">
 
 <div class="project">
 
@@ -278,7 +308,7 @@ footer a {
 
 <section>
 
-<h3>Formación</h3>
+<section id="formacion">
 
 <div class="about">
 
